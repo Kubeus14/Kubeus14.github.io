@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   const apiRoot = 'https://sheltered-citadel-47475.herokuapp.com/v1/task/';
+   const apiRoot = 'http://localhost:8080/v1/task/';
    const trelloApiRoot = 'http://localhost:8080/v1/trello/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const $tasksContainer = $('[data-tasks-container]');
@@ -205,4 +205,4 @@ $(document).ready(function() {
    $tasksContainer.on('click','[data-task-edit-abort-button]', toggleEditingState);
    $tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
    $tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
-});   
+});
